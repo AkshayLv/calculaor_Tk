@@ -5,6 +5,7 @@ root = Tk()
 root.title("Calculator")
 root.geometry("270x440+600+200")
 root.resizable(False, False)
+root.configure(bg="black")
 
 operands = [None,None]
 op = [None]
@@ -60,17 +61,16 @@ def cred():
 
 
 
-b7 = Button(root, text="7", width=10, height = 3, command=lambda: num_clk(7))
-b8 = Button(root, text="8", width=10, height = 3, command=lambda: num_clk(8))
-b9 = Button(root, text="9", width=10, height = 3, command=lambda: num_clk(9))
-b4 = Button(root, text="4", width=10, height = 3, command=lambda: num_clk(4))
-b5 = Button(root, text="5", width=10, height = 3, command=lambda: num_clk(5))
-b6 = Button(root, text="6", width=10, height = 3, command=lambda: num_clk(6))
-b1 = Button(root, text="1", width=10, height = 3, command=lambda: num_clk(1))
-b2 = Button(root, text="2", width=10, height = 3, command=lambda: num_clk(2))
-b3 = Button(root, text="3", width=10, height = 3, command=lambda: num_clk(3))
-b0 = Button(root, text="0", width=10, height = 3, command=lambda: num_clk(0))
-
+b7 = Button(root, text="7", width=10, height = 3, bg = "gray", command=lambda: num_clk(7))
+b8 = Button(root, text="8", width=10, height = 3, bg = "gray", command=lambda: num_clk(8))
+b9 = Button(root, text="9", width=10, height = 3, bg = "gray", command=lambda: num_clk(9))
+b4 = Button(root, text="4", width=10, height = 3, bg = "gray", command=lambda: num_clk(4))
+b5 = Button(root, text="5", width=10, height = 3, bg = "gray", command=lambda: num_clk(5))
+b6 = Button(root, text="6", width=10, height = 3, bg = "gray", command=lambda: num_clk(6))
+b1 = Button(root, text="1", width=10, height = 3, bg = "gray", command=lambda: num_clk(1))
+b2 = Button(root, text="2", width=10, height = 3, bg = "gray", command=lambda: num_clk(2))
+b3 = Button(root, text="3", width=10, height = 3, bg = "gray", command=lambda: num_clk(3))
+b0 = Button(root, text="0", width=10, height = 3, bg = "gray", command=lambda: num_clk(0))
 
 b7.grid(row=1, column=0, pady=5, padx=5)
 b8.grid(row=1, column=1, pady=5, padx=5)
